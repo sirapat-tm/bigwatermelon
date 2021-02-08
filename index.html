@@ -7,8 +7,8 @@
     <title>Finding Milinza</title>
 
     <!--http://www.html5rocks.com/en/mobile/mobifying/ user-scalable=no -->
-    <!--meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1,maximum-scale=1"/-->
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
+    <!--meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1" /-->
 
     <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -70,6 +70,8 @@
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
         <div id="block-Box" style="display:block;width:100%;height:100%;"></div>
     </div>
+    
+    <div id="win-height" style="position: fixed;left: 0; top: 0; bottom:0; width: 0; z-index: "></div>
 
 
 
@@ -107,7 +109,7 @@
         judgeLanTitle();
 
         function judgeLanTitle() {
-            alert("点击宝箱,切换西瓜。破坏游戏体验，谨慎尝试。")
+            alert("รวมต้าวมิลิน ให้ได้ตัวใหญ่ที่สุด สามารถกดกล่องสมบัติเพื่อเปลี่ยนตัวได้")
 
             //        console.log("window.navigator.language",window.navigator.language);
 
